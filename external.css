@@ -1,0 +1,120 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(32, 178, 171, 0.09);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.straight {
+position: relative;
+width: 100%;
+height: 100vh;
+background: #222;
+overflow: hidden;
+z-index: -60;
+}
+
+.layer {
+    position: absolute;
+    top: 0;
+    left: -50;
+    width: 100%;
+    height: 100vh;
+    background: lightseagreen;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.25);
+}
+
+.layer.layer1 {
+    background: lightseagreen;
+    width: 100px;
+    height: 100px;
+    margin-left: 0px;
+    border-radius: 50%;
+    transform: skew(-20deg) translateX(400px) translateY(40px);
+    z-index: 100;
+}
+
+.flex-item {
+    background: rgb(50, 55, 41);
+    width: 300px;
+    height: 150px;
+    color: rgb(50, 55, 41);
+    transform: skew(-45deg) translateX(600px) translateY(600px);
+    z-index: 100;
+  }
+
+.layer.layer2 {
+    background: lightseagreen;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: skew(-20deg) translateX(200px) translateY(180px);
+    z-index: 100;
+}
+
+.layer.layer3 {
+    background: rgb(157, 171, 129);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: skew(-20deg) translateX(650px) translateY(280px);
+    z-index: 100;
+}
+
+.layer.layer4 {
+    background: rgb(89, 89, 88);
+    transform: skew(-45deg) translateX(-600px);
+    z-index: 10;
+}
+
+.layer.layer5 {
+    background: lightseagreen;
+    display: flex;
+    transform: skew(45deg) translateX(0px);
+    z-index: 2;
+}
+
+.layer.layer6 {
+    background: rgb(157, 171, 129);
+    transform: skew(-45deg) translateX(-400px);
+    z-index: 4;
+}
+
+.layer.layer7 {
+    background: rgb(229, 238, 210);
+    width: 200px;
+    height: 100px;
+    background: red;
+    border-radius: 100px / 50px;
+    transform: skew(-45deg) translateX(-500px);
+    z-index: 30;
+}
+
+.layer.layer8 {
+    background: rgb(50, 55, 41);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: skew(-45deg) translateX(-300px);
+    z-index: 8;
+}
+
+.layer.layer9 {
+    background: rgb(128, 130, 125);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transform: skew(-45deg) translateX(-400px);
+    z-index: 1;
+}
+
+.bottomtable {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 20px;
+}
